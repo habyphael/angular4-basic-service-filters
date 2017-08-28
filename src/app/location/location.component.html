@@ -1,0 +1,186 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Location</label>
+                        <select class="form-control" id="location" name="location" [(ngModel)]="queryOptions.location">
+                            <option *ngFor="let location of cities" [ngValue]="location">{{location}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="item-spacer-sm"></div>
+                            <label>Occasion</label>
+                            <div class="dropdown">
+                                <button class="btn btn-default btn-block" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span>{{queryOptions.eventType}}</span>
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-box" aria-labelledby="dLabel">
+                                <li>
+                                    <div class="radio">
+                                      <label>
+                                        <input type="radio" name="occasionRadio" [(ngModel)]="queryOptions.eventType" id="occasionRadio" value="Any" checked="checked"/>
+                                        Any
+                                      </label>
+                                    </div>
+                                </li>
+                                  <li>
+                                    <div class="radio">
+                                        <label>
+                                          <input type="radio" name="occasionRadio" [(ngModel)]="queryOptions.eventType" id="occasionRadio" value="Birthday" />
+                                          Birthday
+                                        </label>
+                                      </div>
+                                  </li>
+                                  <li>
+                                    <div class="radio">
+                                        <label>
+                                          <input type="radio" name="occasionRadio" [(ngModel)]="queryOptions.eventType" id="occasionRadio" value="Corporate" />
+                                          Corporate party
+                                        </label>
+                                      </div>
+                                  </li>
+                                  <li>
+                                    <div class="radio">
+                                        <label>
+                                          <input type="radio" name="occasionRadio" [(ngModel)]="queryOptions.eventType" id="occasionRadio" value="Private" />
+                                          Private party
+                                        </label>
+                                      </div>
+                                  </li>
+                                  <li>
+                                    <div class="radio">
+                                        <label>
+                                          <input type="radio" name="occasionRadio" [(ngModel)]="queryOptions.eventType" id="occasionRadio" value="Wedding" />
+                                          Wedding
+                                        </label>
+                                      </div>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                    <div class="col-md-2">
+                        <div class="item-spacer-sm"></div>
+                        <label>Guests</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-block" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span *ngIf="queryOptions.guests == 0">Any</span>
+                              <span *ngIf="queryOptions.guests == 100">{{queryOptions.guests}} - 199</span>
+                              <span *ngIf="queryOptions.guests == 200">{{queryOptions.guests}} - 299</span>
+                              <span *ngIf="queryOptions.guests == 300">{{queryOptions.guests}} - 399</span>
+                              <span *ngIf="queryOptions.guests == 400">400 + </span>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-box" aria-labelledby="dLabel">
+                                <li>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="guestRadio" [(ngModel)]="queryOptions.guests" id="guestRadio" value="0" checked="checked"/>
+                                            Any
+                                        </label>
+                                    </div>
+                                </li>
+                              <li>
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="guestRadio" [(ngModel)]="queryOptions.guests" id="guestRadio" value="100" />
+                                      100 - 199
+                                    </label>
+                                  </div>
+                              </li>
+                              <li>
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="guestRadio" [(ngModel)]="queryOptions.guests" id="guestRadio" value="200" />
+                                      200 - 299
+                                    </label>
+                                  </div>
+                              </li>
+                              <li>
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="guestRadio" [(ngModel)]="queryOptions.guests" id="guestRadio" value="300" />
+                                      300 - 399
+                                    </label>
+                                  </div>
+                              </li>
+                              <li>
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="guestRadio" [(ngModel)]="queryOptions.guests" id="guestRadio" value="400" />
+                                      400 +
+                                    </label>
+                                  </div>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="item-spacer-sm"></div>
+                        <div class="dropdown">
+                            <label>Price</label><br/>
+                            <button class="btn btn-default btn-block" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span *ngIf="queryOptions.minPrice == null">Any</span>
+                                <span *ngIf="queryOptions.minPrice != null">{{queryOptions.minPrice}}</span><span *ngIf="queryOptions.maxPrice != null"> - {{queryOptions.maxPrice}}</span>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-box" aria-labelledby="dLabel">
+                                <li>
+                                    From
+                                    <input class="form-control" type="text" name="minPrice" [(ngModel)]="queryOptions.minPrice" id="minPrice" />
+                                </li>
+                                <li>
+                                    To
+                                    <input class="form-control"  type="text" name="maxPrice" [(ngModel)]="queryOptions.maxPrice" id="maxPrice" />
+                                </li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="item-spacer-lg item-spacer-sm"></div>
+                        <button class="btn btn-success btn-block" (click) = "seach()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row" *ngIf="locations && locations.length">
+            <div class="col-md-4" *ngFor="let location of locations">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img [src]="location.imageUrl" class="img-responsive" />
+                        <h3 class="text-ellipsis">{{location.locationName}}</h3>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> {{location.location}}</span>
+                        <span class="pull-right"><i class="fa fa-users" aria-hidden="true"></i> {{location.guests}}</span>
+                        <br />
+                        <button class="btn btn-default" data-toggle="modal" data-target="#myModal" (click)="showInfo(location)">More info</button>
+                        <button class="btn btn-success">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 *ngIf="locations && locations.length == 0" class="text-center">
+            No location found... empty some filters :)
+        </h3>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Location Info</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{currentLocationDescription}}</p>
+        <h4>$ {{currentLocationPrice}}</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

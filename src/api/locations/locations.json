@@ -1,0 +1,98 @@
+[
+    {
+        "id": 101,
+        "locationName": "Raddampfer",
+        "description": "Raddampfer",
+        "type": "eventLocation",
+        "location": "Hamburg",
+        "eventType": "Birthday",
+        "price": 850.95,
+        "guests": 2150,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 102,
+        "locationName": "The red room",
+        "description": "Werben Sie hier für Ihr Unternehmen!",
+        "type": "eventLocation",
+        "location": "Berlin",
+        "eventType": "Corporate",
+        "price": 19.95,
+        "guests": 220,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 103,
+        "locationName": "Urban Foodie",
+        "description": "Urban Foodie",
+        "type": "eventLocation",
+        "location": "Leipzig",
+        "eventType": "Wedding",
+        "price": 1500,
+        "guests": 500,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 104,
+        "locationName": "Eventschiff Grosser Michel",
+        "description": "MS GROSSER MICHEL - WILLKOMMEN AN BORD UND LEINEN LOS!",
+        "type": "eventLocation",
+        "location": "Frankfurt",
+        "eventType": "Corporate",
+        "price": 19.95,
+        "guests": 150,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 105,
+        "locationName": "Haus der Patriotischen Gesellschaft",
+        "description": "Das Haus der Patriotischen Gesellschaft dient seit 1847 als Ort für Veranstaltungen. Das aufwendig sanierte und denkmalgeschützte Gebäude im Herzen der Hamburger Altstadt bietet bis zu 300 Gästen Platz",
+        "type": "eventLocation",
+        "location": "Frankfurt",
+        "eventType": "Birthday",
+        "price": 560,
+        "guests": 299,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 106,
+        "locationName": "Kuppel Hamburg",
+        "description": "Die Kuppel Hamburg, oder auch liebevoll \"The Dome\" genannt, bietet den perfekten Rahmen für Feiern und Feste genau nach Ihren Wünschen.",
+        "type": "eventLocation",
+        "location": "Hamburg",
+        "eventType": "Wedding",
+        "price": 1200,
+        "guests": 400,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 107,
+        "locationName": "Highnoon",
+        "description": "Erleben Sie im Highnoon City Studio Ihr besonderes Event. Mit einer großen Fläche von 200 m² finden Sie hier freie Gestaltungsmöglichkeiten für Ihre Ideen und Vorstellungen.",
+        "type": "eventLocation",
+        "location": "Berlin",
+        "eventType": "Private",
+        "price": 219.95,
+        "guests": 200,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    },
+    {
+        "id": 108,
+        "description": "Die Seute Deern bietet Ihnen und Ihren Gästen waschechten Hamburger Charme und ein einzigartig maritimes Ambiente, das jede Veranstaltung zu einem unvergesslichen Erlebnis macht",
+        "locationName": "Seute Deern",
+        "type": "eventLocation",
+        "location": "Kassel",
+        "eventType": "Private",
+        "price": 400,
+        "guests": 300,
+        "starRating": 3.2,
+        "imageUrl": "https://openclipart.org/download/17359/jcartier-city-1.svg"
+    }
+]

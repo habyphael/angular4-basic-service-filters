@@ -1,0 +1,82 @@
+/******* Buttons ********/
+.btn-register {
+    background-color: #00AA96;
+    color: #fff;
+    border-radius: 0;
+    font-size: large;
+}
+.btn-register:hover, .btn-register:focus, .btn-register:active {
+    background-color: #00AA96;
+    color: #fff;
+    border-radius: 0;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #00AA96;
+    border-color: #00AA96;
+}
+
+    .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+        color: #fff;
+        background-color: #00AA96;
+        border-color: #00AA96;
+        outline: none;
+    }
+
+/******** Fonts *********/
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/******* Navs *********/
+.navbar-default .navbar-brand {
+    color: #00AA96;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #00AA96;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: #00AA96;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #00AA96;
+}
+
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+/********** Items ************/
+@media(max-width: 991px){
+    .item-spacer-sm {
+        margin-top: 25px;
+    }
+}
+
+@media(min-width: 992px){
+    .item-spacer-lg {
+        margin-top: 24px;
+    }
+}
+
+/******** Components **********/
+.dropdown-box {
+    padding: 15px;
+}
